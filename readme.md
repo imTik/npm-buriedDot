@@ -11,7 +11,7 @@ BuriedDot(router, (mark, buriedData) => {
   console.log('触发埋点的标记: ', mark)
   console.log('获取到的埋点信息: ', buriedData);
   /**
-   * 触发埋点的标记mark: router / click / leave
+   * 触发埋点的标记mark: router(路由埋点) / click(点击事件埋点) / leave(用户离开/无操作 埋点) / close(关闭页面埋点)
    * 
    * 埋点信息
    * buriedData: {
