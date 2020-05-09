@@ -1,4 +1,5 @@
 ## How to use buriedDot?
+> This is a buried point plugin based on the vue framework
 
 ### npm install buriedDot
 
