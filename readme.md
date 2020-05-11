@@ -15,13 +15,9 @@ BuriedDot(router, (mark, buriedData) => {
    * 
    * 埋点信息
    * buriedData: {
-   *   currentPagePath: "/home"
-   *   currentPageTitle: "首页"
-   *   enterTime: "2020-05-09 14:26:26"
-   *   formPagePath: "/"
-   *   fromPagaTitle: ""
-   *   lastTime: 0
-   *   pageCount: 1
+   *   deviceData: {...}  // 设备信息
+   *   dotData:    {...}  // 埋点信息
+   *   netData：   {...}  // 网络加载信息
    * }
   */
 }, 60000);
