@@ -5,7 +5,7 @@
 
 ### use buriedDot
 ``` javascript
-import BuriedDot from './utils/buriedDot';
+import BuriedDot from 'burieddot';
 // 这里需要传入 router , callback, 60000 = 预设用户离开时间
 BuriedDot(router, (mark, buriedData) => {
   console.log('触发埋点的标记: ', mark)
