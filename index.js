@@ -55,6 +55,7 @@ function BuriedDot (router, cb, leaveTime = 60000) {
 
     checkDataAttribute();
 
+    let ORIGIN = `${window.location.origin}/#`
     let enterTime = getNowDate();
     pageCount ++;
     let fromPagaTitle = '';
@@ -63,8 +64,8 @@ function BuriedDot (router, cb, leaveTime = 60000) {
     if(to.meta && to.meta.title) currentPageTitle = to.meta.title;
     
     dotDetail.dotData.pageCount        = pageCount;
-    dotDetail.dotData.formPagePath     = from.path;
-    dotDetail.dotData.currentPagePath  = to.path;
+    dotDetail.dotData.formPagePath     = ORIGIN + from.path;
+    dotDetail.dotData.currentPagePath  = ORIGIN + to.path;
     dotDetail.dotData.fromPagaTitle    = fromPagaTitle;
     dotDetail.dotData.currentPageTitle = currentPageTitle;
     dotDetail.dotData.enterTime        = enterTime;
