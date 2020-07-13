@@ -55,7 +55,7 @@ function BuriedDot (router, cb, leaveTime = 60000) {
 
     checkDataAttribute();
 
-    let ORIGIN = `${window.location.origin}/#`
+    let ORIGIN = router.mode === 'hash' ? `${window.location.origin}/#` : `${window.location.origin}/`;
     let enterTime = getNowDate();
     pageCount ++;
     let fromPagaTitle = '';
