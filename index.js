@@ -111,6 +111,7 @@ function BuriedDot (router, cb, leaveTime = 60000) {
 
       checkDataAttribute();
       cb('leave', dotDetail);
+      clearInterval(mouseInterval);
 
     }, leaveTime);
 
